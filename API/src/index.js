@@ -40,7 +40,7 @@ app.put('/:id', async(req,res) => {
 
 app.delete('/:id', async (req,res) => {
     const user = await  User.findByIdAndDelete(req.params.id)
-    res.send(user)
+    res.send("Removido com sucesso!")
     
 })
 
