@@ -28,7 +28,7 @@ app.post('/Usuario', async (req, res) => {
         email: req.body.email
     })
     await user.save()
-    res.status.send("Usuario registrado!")
+    res.status(201).send("Usuario registrado!")
 })
 
 app.put('/Usuario/:id', async (req, res) => {
